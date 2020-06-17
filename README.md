@@ -21,6 +21,7 @@ This is an intensive 7-month training course resulting from an internship in a c
 
 ### Objectives :
 * Training CSS animations
+* Make a text animation like the one at the start of Star Wars movies
   
 ### Progression :
 * Work in progress
