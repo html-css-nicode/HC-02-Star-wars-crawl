@@ -8,50 +8,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
-  <!-- music component -->
-  <audio preload="auto" autoplay>
-    <source src="generic-sw.mp3" type="audio/mpeg">
-  </audio>
-  <!-- intro sentence -->
-  <section class="intro">
-    A long time ago, in a galaxy far,<br> far away....
-  </section>
-  <!-- logo after intro sentence  -->
-  <section class="logo">
-    <img src="./img/logo-becode.png" alt="logo becode">
-  </section>
-  <!-- main text -->
-  <div id="board">  
-    <div id="content">
-      <p id="title">Nice Journey</p>
-      <p>One day an old lumberjack started his day, like all those days, with a good coffee and then he took his favourite axe and went into the wood-breaking forest. There was so much wood to cut that he was sure he could spend his whole life without even thinking about it, cutting wood would be his future. He started by cutting one, then two, then three, and the fourth would logically know the edge of his blade. But the fourth tree was inhabited by a family of squirrels. The mother squirrel gave the lumberjack a wary look. So the lumberjack had to make a life-changing choice.</p>  
-      <p>He decided to use the wood from the already felled trees to build a small squirrel house. The mother was happy and told all her other friends in the forest.</p> 
-      <p>The mother squirrel then had an idea, to thank the woodcutter. She invited him to eat berries, fruits, nuts and hazelnuts. After this encounter and with a boost of good karma accomplished, he went back to cutting down trees and this time he fell in front of a cat who didn't dare to come down from his perch.</p>
-      <p>The lumberjack was really ennoyed, because he was so determinated to accomplish his task. But at the same time the cat looked wery scary. He was very big, with fluffy and dirty fur.The lumberjack felt bad for the cat, and despite his fear he tooked the ugly scary cat witch him and brought him home.</p> 
-    </div>  
-  </div>
-</body>
-<script type="text/javascript">
-  // Sets the number of stars
-  const numStars = 150;
-
-  // For every star we want to display
-  for (let i = 0; i < numStars; i++) {
-    let star = document.createElement("div");  
-    star.className = "star";
-    var xy = getRandomPosition();
-    star.style.top = xy[0] + 'px';
-    star.style.left = xy[1] + 'px';
-    document.body.append(star);
-  }
-
-  // Gets random x, y values based on the size of the container
-  function getRandomPosition() {  
-    var x = window.innerHeight;
-    var y = window.innerWidth;
-    var randomX = Math.floor(Math.random()*x);
-    var randomY = Math.floor(Math.random()*y);
-  }
-</script>
+  <body>
+    <!-- music component -->
+    <audio preload="auto" autoplay>
+      <source src="generic-sw.mp3" type="audio/mpeg">
+    </audio>
+    <!-- intro sentence -->
+    <section class="intro">
+      A long time ago, in a galaxy far,<br> far away....
+    </section>
+    <!-- logo after intro sentence  -->
+    <section class="logo">
+      <img src="./img/logo-becode.png" alt="logo becode">
+    </section>
+    <!-- main text -->
+    <div id="board">  
+      <div id="content">
+        <p id="title">Nice Journey</p>
+        <p>One day an old lumberjack started his day, like all those days, with a good coffee and then he took his favourite axe and went into the wood-breaking forest. There was so much wood to cut that he was sure he could spend his whole life without even thinking about it, cutting wood would be his future. He started by cutting one, then two, then three, and the fourth would logically know the edge of his blade. But the fourth tree was inhabited by a family of squirrels. The mother squirrel gave the lumberjack a wary look. So the lumberjack had to make a life-changing choice.</p>  
+        <p>He decided to use the wood from the already felled trees to build a small squirrel house. The mother was happy and told all her other friends in the forest.</p> 
+        <p>The mother squirrel then had an idea, to thank the woodcutter. She invited him to eat berries, fruits, nuts and hazelnuts. After this encounter and with a boost of good karma accomplished, he went back to cutting down trees and this time he fell in front of a cat who didn't dare to come down from his perch.</p>
+        <p>The lumberjack was really ennoyed, because he was so determinated to accomplish his task. But at the same time the cat looked wery scary. He was very big, with fluffy and dirty fur.The lumberjack felt bad for the cat, and despite his fear he tooked the ugly scary cat witch him and brought him home.</p> 
+      </div>  
+    </div>
+  </body>
 </html>
