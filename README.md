@@ -5,7 +5,7 @@
 #### 17/06/2020
 
 ### End :
-#### 
+#### 18/06/20
   
 ### Where :
 #### BeCode Charleroi @ A6K-E6K
@@ -24,4 +24,7 @@ This is an intensive 7-month training course resulting from an internship in a c
 * Make a text animation like the one at the start of Star Wars movies
   
 ### Progression :
-* Work in progress
+* Work suspended
+
+### Issues :
+* Autoplay not working on Chrome (even with iframe)
