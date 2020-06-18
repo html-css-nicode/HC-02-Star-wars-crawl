@@ -1,82 +1,170 @@
 body {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  overflow: hidden;
+  margin: 0;
+  background-color: black;
 }
 
-.fade {
-  position: relative;
-  width: 100%;
-  min-height: 60vh;
-  top: -25px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(75%, black));
-  background-image: linear-gradient(0deg, transparent, black 75%);
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+}
+
+.intro {
+  position: absolute;
+  top: 45%;
+  left: 55%;
   z-index: 1;
+  -webkit-animation: intro 6s ease-out 1s;
+          animation: intro 6s ease-out 1s;
+  color: #4bd5ee;
+  font-weight: 400;
+  font-size: 300%;
+  font-family: 'Libre Franklin', sans-serif;
+  opacity: 0;
 }
 
-.star-wars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  height: 800px;
-  color: #feda4a;
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 500%;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 150%;
-  -webkit-perspective: 400px;
-          perspective: 400px;
-  text-align: justify;
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.crawl {
-  position: relative;
-  top: 99999px;
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 30vh;
+  left: 45vw;
+  z-index: 1;
+  margin: auto;
+  -webkit-animation: logo 9s ease-out 9s;
+          animation: logo 9s ease-out 9s;
+  opacity: 0;
+}
+
+.logo img {
+  max-width: 20vw;
+  max-height: 10vw;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    width: 18em;
+    -webkit-transform: scale(2.75);
+            transform: scale(2.75);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    width: 18em;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    width: 18em;
+  }
+}
+
+@keyframes logo {
+  0% {
+    width: 18em;
+    -webkit-transform: scale(2.75);
+            transform: scale(2.75);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    width: 18em;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    width: 18em;
+  }
+}
+
+p {
+  color: #FFFF82;
+}
+
+#board {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  -webkit-transform: perspective(300px) rotateX(25deg);
+          transform: perspective(300px) rotateX(25deg);
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
-  -webkit-animation: crawl 60s linear;
-          animation: crawl 60s linear;
+  text-align: justify;
+  position: absolute;
+  margin-left: -9em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%;
 }
 
-.crawl > .title {
-  font-size: 90%;
+#board:after {
+  position: absolute;
+  content: ' ';
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#content {
+  -webkit-animation: scroll 100s linear 16s;
+          animation: scroll 100s linear 16s;
+  position: absolute;
+  top: 100%;
+}
+
+#title, #subtitle {
   text-align: center;
 }
 
-.crawl > .title h1 {
-  margin: 0 0 100px;
-  text-transform: uppercase;
-}
-
-@-webkit-keyframes crawl {
+@-webkit-keyframes scroll {
   0% {
-    top: -100px;
-    -webkit-transform: rotateX(20deg) translateZ(0);
-            transform: rotateX(20deg) translateZ(0);
+    top: 100%;
   }
   100% {
-    top: -6000px;
-    -webkit-transform: rotateX(25deg) translateZ(-2500px);
-            transform: rotateX(25deg) translateZ(-2500px);
+    top: -170%;
   }
 }
 
-@keyframes crawl {
+@keyframes scroll {
   0% {
-    top: -100px;
-    -webkit-transform: rotateX(20deg) translateZ(0);
-            transform: rotateX(20deg) translateZ(0);
+    top: 100%;
   }
   100% {
-    top: -6000px;
-    -webkit-transform: rotateX(25deg) translateZ(-2500px);
-            transform: rotateX(25deg) translateZ(-2500px);
+    top: -170%;
   }
 }
 /*# sourceMappingURL=style.css.map */

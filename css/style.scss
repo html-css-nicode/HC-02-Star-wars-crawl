@@ -1,61 +1,125 @@
 
-
+// starred background - working with js script inside html
 body {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  overflow: hidden;
+  margin: 0;
+  background-color: black;
 }
 
-.fade {
-  position: relative;
-  width: 100%;
-  min-height: 60vh;
-  top: -25px;
-  background-image: linear-gradient(0deg, transparent, black 75%);
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+}
+
+// intro sentence
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   z-index: 1;
+  animation: intro 6s ease-out 1s;
+  color: rgba(75, 213, 238);
+  font-weight: 400;
+  font-size: 300%;
+  font-family: 'Libre Franklin', sans-serif;
+  opacity: 0;
 }
 
-.star-wars {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 800px;
-  color: #feda4a;
+@keyframes intro {
+  0% {
+      opacity: 0;
+  }
+  20% {
+      opacity: 1;
+  }
+  90% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+// Set the animation & hide the logo 
+.logo {    
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  z-index: 1;
+  margin: auto;
+  animation: logo 9s ease-out 9s;
+  opacity: 0;
+}
+
+.logo img {
+  width: inherit;
+}
+
+// logo management 
+@keyframes logo {
+  0% {
+      width: 18em;        
+      transform: scale(2.75);
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+      width: 18em;      
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0.1);
+      width: 18em;        
+  }
+}
+
+// main text management
+p {
+  color: rgba(245,203,3);
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 500%;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 150%;
-  perspective: 400px;
-  text-align: justify;
 }
 
-.crawl {
-  position: relative;
-  top: 99999px;
+#board {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(200px) rotateX(25deg);
   transform-origin: 50% 100%;
-  animation: crawl 60s linear;
+  text-align: justify;
+  position: absolute;
+  margin-left: -9em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%;
 }
 
-.crawl > .title {
-  font-size: 90%;
+#board:after {
+  position: absolute;
+  content: ' ';
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#content {
+  animation: scroll 100s linear 16s;
+  position: absolute;
+  top: 100%;
+}
+
+#title {
   text-align: center;
 }
 
-.crawl > .title h1 {
-  margin: 0 0 100px;
-  text-transform: uppercase;
-}
-
-@keyframes crawl {
+@keyframes scroll {
     0% {
-    top: -100px;
-    transform: rotateX(20deg)  translateZ(0);
-  }
-    100% { 
-    top: -6000px;
-    transform: rotateX(25deg) translateZ(-2500px);
-  }
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
 }
-
