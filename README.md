@@ -19,10 +19,12 @@ Creation of a Star Wars crawler to test css animations
 
 ---
 
-**BeCode** Web Developer Training  
-This project took place in my leearning path in BeCode (see below) to full stack web developer.
-In seven months you have a wonderful luck to become a great web developer. Inclusion and share spirit is your daily feeling !  
-Give maximum to get maximum :rocket:
+### BeCode Intensive Bootcamp
+
+In ten months, you have a wonderful opportunity to become a great Junior App & Web Developer. We are motivated by inclusion and the spirit of sharing!
+The bootcamp aims at acquiring self-learning skills and mastering a junior web developer path, both frontend and backend. Support is provided by a team of great coaches who will guide you and help you overcome the various peaks of difficulty encountered.
+
+Give maximum to get maximum 🚀
 
 ### Timeline 
 [Discover the great timeline of my adventure to become a developer :calendar: Want to write your company name on it ? See collaboration section ;)](https://timelines.gitkraken.com/timeline/2e12cc334eb0406b84bf7a6339e666c4?range=2020-05-26_2020-06-27)  
